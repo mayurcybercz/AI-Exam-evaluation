@@ -1,4 +1,23 @@
+CLI-Tool to recognise handwritten text from answer sheets using Tesseract OCR.
+Using this extracted text to evaluate marks using NLP.
 
+Installation:
+Install Tesseract-OCR-Engine https://github.com/tesseract-ocr/tesseract/wiki
+Install python dependencies pytesseract,pillow,pandas,numpy,matplotlib
+
+Usage:
+1)Clone the repository into your working directory
+2)Make sure you update path of tesseract executable in main.py
+3)add image for testing to images folder
+4)main.py imagename
+It will return a HOCR file,which is very similar to XHTML
+5)file_conversion.py hocrfilename.
+It will convert HOCR into dataframe and store the output in a pickle file/json file
+
+
+
+Phase1 demonstration of the OCR of handwritten text and exploiting into JSON
+(Rendered python notebook displayed as markdown using nbconvert)
 
 ```python
 from pytesseract import pytesseract
