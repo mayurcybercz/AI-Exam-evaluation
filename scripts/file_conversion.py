@@ -34,7 +34,7 @@ if __name__ == "__main__":
     #generating JSON and Pickle files from dataframe
     
     dataframe.to_json(filename+".json",orient='columns')
-    print("JSON generated: "filename+".JSON")
+    print("JSON generated: "+filename+".JSON")
     dataframe.to_pickle(filename+".pkl")
-    print("Pickle generated: "filename+".pkl")
+    print("Pickle generated: "+filename+".pkl")
 
