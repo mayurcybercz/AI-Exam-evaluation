@@ -1,29 +1,29 @@
-CLI-Tool to recognise handwritten text from answer sheets using Tesseract OCR.
-Using this extracted text to evaluate marks using NLP.
+CLI-Tool to recognise handwritten text from answer sheets using Tesseract OCR.<br>
+Using this extracted text to evaluate marks using NLP.<br>
 
-Installation:
-Install Tesseract-OCR-Engine https://github.com/tesseract-ocr/tesseract/wiki
-Install python dependencies pytesseract,pillow,pandas,numpy,matplotlib
+Installation:<br>
+Install Tesseract-OCR-Engine https://github.com/tesseract-ocr/tesseract/wiki<br>
+Install python dependencies pytesseract,pillow,pandas,numpy,matplotlib<br>
 
-Usage:
-1)Clone the repository into your working directory
-2)Make sure you update path of tesseract executable in main.py
-3)add image for testing to images folder
-4)main.py imagename
-It will return a HOCR file,which is very similar to XHTML
-5)file_conversion.py hocrfilename.
-It will convert HOCR into dataframe and store the output in a pickle file/json file
+Usage:<br>
+1)Clone the repository into your working directory<br>
+2)Make sure you update path of tesseract executable in main.py<br>
+3)add image for testing to images folder<br>
+4)main.py imagename<br>
+It will return a HOCR file,which is very similar to XHTML<br>
+5)file_conversion.py hocrfilename.<br>
+It will convert HOCR into dataframe and store the output in a pickle file/json file<br>
 
 
 
-Phase1 demonstration of the OCR of handwritten text and exploiting into JSON
-(Rendered python notebook displayed as markdown using nbconvert)
+Phase1 demonstration of the OCR of handwritten text and exploiting into JSON<br>
+(Rendered python notebook displayed as markdown using nbconvert)<br>
 
-Phase2 Using nltk to Create A NLP model to evaluate Answers
+Phase2 Using nltk to Create A NLP model to evaluate Answers<br>
 
-Download all the packages using the nltk downloader
-</br>
-import nltk
+Download all the packages using the nltk downloader<br>
+<br>
+import nltk<br>
 nltk.download()
 
 
