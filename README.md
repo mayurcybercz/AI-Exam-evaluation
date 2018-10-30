@@ -19,6 +19,17 @@ It will convert HOCR into dataframe and store the output in a pickle file/json f
 Phase1 demonstration of the OCR of handwritten text and exploiting into JSON
 (Rendered python notebook displayed as markdown using nbconvert)
 
+Phase2 Using nltk to Create A NLP model to evaluate Answers
+
+Download all the packages using the nltk downloader
+</br>
+nltk.download()
+
+
+![png](demonstration_files/nltkdownloader.png)
+
+
+
 ```python
 from pytesseract import pytesseract
 import sys
