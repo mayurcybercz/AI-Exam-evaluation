@@ -23,6 +23,7 @@ Phase2 Using nltk to Create A NLP model to evaluate Answers
 
 Download all the packages using the nltk downloader
 </br>
+import nltk
 nltk.download()
 
 
