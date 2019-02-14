@@ -1,0 +1,32 @@
+<a href="/:username/exams">Go Back</a>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Hello {{username}} <br>Check a question</h3>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-md-12">
+      <form method="POST" action="/:username/admin_tools/check_a_question/submit">
+        <div class="form-group">
+                      <label>Question</label>
+                      <input type="text" class="form-control" name="question" placeholder="question">
+                    </div>
+                    <div class="form-group">
+                      <label>Answer</label>
+                      <input type="text" class="form-control"  name="answer" placeholder="answer">
+                    </div>
+                    <div class="form-group">
+                      <label>User Input</label>
+                      <input type="text" class="form-control"  name="uinput" placeholder="uinput">
+                    </div>
+                    <div class="form-group">
+                      <label>List of keywords(comma-seperated)</label>
+                      <input type="text" class="form-control"  name="keywords" placeholder="keywords">
+                    </div>
+                    <input type="hidden" name="username" value={{username}}>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+    </div>
+  </div>
+</div>

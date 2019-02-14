@@ -1,0 +1,35 @@
+<!-- //<a href="/:username/exams">Go Back</a> -->
+<form action="/:username/exams">
+  <input type="hidden" name="username" value={{username}}>
+  <button type="submit">Go back</button>
+</form>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">{{examDetail.examName}}</h3>
+    </div>
+    <div class="panel-body">
+      <div class="row">
+        <div class="col-md-8">
+          <ul class="list-group">
+            <li class="list-group-item">Course ID: {{examDetail.cid}}</li>
+            <li class="list-group-item">Exam ID: {{examDetail.eid}}</li>
+            <li class="list-group-item">Exam Date: {{examDetail.examDate}}</li>
+            <li class="list-group-item">Is Active: {{examDetail.isActive}}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="pull-right">
+  <form action="/:username/editexam/{{examDetail._id}}">
+    <input type="hidden" name="username" value={{username}}>
+    <button type="submit">Edit</button>
+  </form>
+  <form action="/:username/deleteexam/{{examDetail._id}}?_method=DELETE" method="POST">
+    <input type="hidden" name="username" value={{username}}>
+    <button type="submit">Delete</button>
+  </form>
+    <!-- {{examDetail._id}}<a href=""></a> |  <a href="#" ng-click="removeExam(exam._id)">Delete</a> -->
+</div>

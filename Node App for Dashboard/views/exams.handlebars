@@ -1,0 +1,25 @@
+
+  <form method="POST" action="/:username/addexam">
+    <input type="hidden" name="username" value={{username}}>
+    <button type="submit" class="btn btn-primary">Create a new exam</button>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Exams</h3>
+      </div>
+    </div>
+  </form>
+  <div class="panel-body">
+    {{#each exams}} 
+    {{examName}}
+      <div class="col-md-6">
+          <div class="col-md-6">
+            <form action="/:username/examdetails/{{_id}}">
+              <input type="hidden" name="username" value={{username}}>
+              <button class="btn btn-primary" type="submit">view details</button>
+            </form>
+          </div>
+      </div>
+      {{/each}}
+  </div>
+
+ 
